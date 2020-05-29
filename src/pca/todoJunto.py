@@ -141,7 +141,7 @@ def PCA_from_SVD_jacobi(A):
     return valores_singulares[:(num_componentes)], componentes[:(num_componentes)], Z[:,:(num_componentes)], varianza_explicada[:(num_componentes)]
 
 
-def PCA_from_QR_vf(data,niter = 120):
+def PCA_from_QR_vf(data,niter = 450):
     """
     Función para PCA a partir de los eigenvectores  
     params: data:			matriz de datos
