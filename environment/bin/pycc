@@ -1,0 +1,3 @@
+#!/home/rafaelortega/Documentos/nuevo_repo_proj_erick/environment/bin/python
+from numba.pycc import main
+main()
