@@ -5,6 +5,7 @@ import codecs
 import sys
 import numpy as np
 
+from src.pca.funciones_examen_QR import matriz_Q_R	
 
 def eigenvectores_eigenvalores_QR_vf(data,niter,tolerancia = 10**-8):
     """
