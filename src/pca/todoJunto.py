@@ -45,7 +45,7 @@ def PCA_from_sklearn(X):
     
     ##Se obtiene el número de componentes a través de la varianza explicada acumulada de los componentes, la cual debe sumar 60%.
     var_acumulada = var_exp.cumsum()
-    conteo = (var_acumulada)  <  0.6
+    conteo = (var_acumulada)  <  0.8
     n_componentes = conteo.sum() + 1
     pca = PCA(n_componentes, svd_solver='full')
     componentesprincipales = pca.fit_transform(X)
@@ -92,7 +92,7 @@ def PCA_from_SVD(A):
     # Threshold de 60%
     n = A.shape[1] #numero de columnas
     varianza_acumulada = varianza_explicada.cumsum()
-    conteo = (varianza_acumulada)  <  0.6
+    conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1
     
     # regresar 4 objetos
@@ -134,7 +134,7 @@ def PCA_from_SVD_jacobi(A):
     # Threshold de 60%
     n = A.shape[1] #numero de columnas
     varianza_acumulada = varianza_explicada.cumsum()
-    conteo = (varianza_acumulada)  <  0.6
+    conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1    
     
     # regresar 4 objetos
@@ -184,7 +184,7 @@ def PCA_from_QR_vf(data,niter = 120):
     # Threshold de 60%
     n = data.shape[1] #numero de columnas
     varianza_acumulada = varianza_explicada.cumsum()
-    conteo = (varianza_acumulada)  <  0.6
+    conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1
     
     # regresar 4 objetos
