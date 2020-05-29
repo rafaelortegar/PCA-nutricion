@@ -12,7 +12,6 @@ import math
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
-from src.pca.algoritmo_svd_jacobi_aprox import svd_jacobi_aprox
 from src.pca.algoritmo_QR import eigenvectores_eigenvalores_QR_vf
 
 def PCA_from_sklearn(X):
