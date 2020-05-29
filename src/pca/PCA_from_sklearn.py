@@ -53,11 +53,11 @@ def componentes_principales(X):
     
     pca_1.components_
     
-    var_exp = pca_1.explained_variance_ratio_
+    var_exp_ratio = pca_1.explained_variance_ratio_
     
     ##Se obtiene el número de componentes a través de la varianza explicada acumulada de los componentes, la cual debe sumar 80%.
     
-    var_acumulada = var_exp.cumsum()
+    var_acumulada = var_exp_ratio.cumsum()
     
     conteo = (var_acumulada)  <  0.8
     
@@ -76,7 +76,7 @@ def componentes_principales(X):
     val_sing = pca.singular_values_
 
 
-    return pca, varianza_explicada, componentesprincipales, val_sing, pca.components_, eigenvalues
+    return pca, varianza_explicada, var_exp_ratio, componentesprincipales, val_sing, pca.components_, eigenvalues
 
 
 
