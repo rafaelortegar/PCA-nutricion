@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import codecs
+import sys
 import numpy as np
 
-from src.pca.funciones_examen_QR import matriz_Q_R
 
 def eigenvectores_eigenvalores_QR_vf(data,niter,tolerancia = 10**-8):
     """
@@ -53,7 +57,7 @@ def eigenvectores_eigenvalores_QR_vf(data,niter,tolerancia = 10**-8):
         # Detener si se logra la tolerancia deseada
         # Notar que en esta primera prueba no se está actualizando  el valor que checa la tolerancia
         if (valor<tolerancia):
-            print("se alcanzo la tolerancia deseada")
+            print("se alcanzo la torelacia deseada")
             break
     
     #se acaba el for
