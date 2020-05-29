@@ -150,3 +150,5 @@ dmypy.json
 
 # Visual Studio Code
 *.vscode
+*proyecto_final_mno.code-workspace
+
