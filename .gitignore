@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+*__pycache__/
 *.py[cod]
 *$py.class
 
@@ -75,7 +75,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+*.ipynb_checkpoints
 
 # IPython
 profile_default/
@@ -128,12 +128,25 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#pycharm files
+*.idea
 
 # MAC files
 .DS_Store
 
 # Doc files
-.docx
-.doc
+*.docx
+*.doc
 .xlsx
+.csv
 *credentials
+/data/.~lock.Cuestionario_Contexto_PLANEA2016.docx#
+.zip
+
+# Jupyter files
+*Untitled.ipynb
+*results/reporte_final-Copy1.ipynb
+
+
+# Visual Studio Code
+*.vscode
