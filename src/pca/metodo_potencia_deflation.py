@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def power_iteration(A, num_simulations: int):
-	"""
+    """
     Función que implementa el método de la potencia  
     params: A:			matriz (en nuestro caso, la de covarianzas)
             num_simulations:      número de iteraciones a realizar    
@@ -36,7 +36,7 @@ def power_iteration(A, num_simulations: int):
 	
 	
 def power_deflation(A,iter):
-	"""
+    """
     Función que itera el método de la potencia, mediante deflation de Hotteling  
     params: A:			matriz (en nuestro caso, la de covarianzas)
             iter:      número de iteraciones a realizar    

@@ -13,7 +13,9 @@ from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
 from src.pca.algoritmo_QR import eigenvectores_eigenvalores_QR_vf
-from src.pca import metodo_potencia_deflation
+from src.pca.metodo_potencia_deflation import power_iteration
+from src.pca.metodo_potencia_deflation import power_deflation
+
 
 def PCA_from_sklearn(X):
     """
@@ -192,16 +194,17 @@ def PCA_from_QR_vf(data,niter = 450):
     return E[:num_componentes], componentes[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes] #, varianza_acumulada, num_componentes
 
 def PCA_from_potencia(X):
-	"""
+    """
     Función que calcula PCA a partir del método de la potencia y deflation de Hotteling  
     params: A:			matriz de datos
     
     
     return:     eigenvalues		Numpy array con los eigenvectores de A
                 eigenvectors	Numpy array con los correspondientes eigenvectores de A 
-
+    
     """
-    prop = 0 #Proporción de varianza explicada
+    
+    prop = 0 # Proporción de varianza explicada
     comp = 1 
     cur_var = 0
     comp_vecs = np.zeros([X.shape[1], X.shape[1]])
@@ -217,7 +220,7 @@ def PCA_from_potencia(X):
     cov = np.dot(X.T, X)/X.shape[0]
     
     #Aplicamos el método de la potencia
-    evalues_pow, evectors_pow = power_deflation(cov,50)
+    evalues_pow, evectors_pow = power_deflation(cov,2000)
     
     # La varianza explicada
     varianza_explicada = evalues_pow/np.sum(evalues_pow)
@@ -233,5 +236,4 @@ def PCA_from_potencia(X):
     conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1
     
-    return evalues_pow[:num_componentes], evectors_pow[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes] 
-    
+    return evalues_pow[:num_componentes], evectors_pow[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes]

@@ -170,3 +170,69 @@ def compara_resultados_abs_sk_qr(A):
     
     
     return comparativa
+
+
+def compara_resultados_abs_sk_potencia(A):
+    """
+    compara_resultados_abs_sk_qr: compara resultados de las funciones PCA_from_sklearn y PCA_from_potencia
+    
+    Función que compara los resultados de las funciones PCA_from_sklearn y PCA_from_potencia, 
+    y regresa la información en forma de un pandas data frame.
+    
+    Parameters
+    ----------
+    A - sección de los datos a la que se aplicará PCA
+    
+    Returns
+    ---------
+    Dataframe con comparación y errores relativos 
+    
+    
+    """    
+    
+    # PCA de scikit learn
+    pca, var_exp, comp_prin, val_sing, pca_coef, eigenvalues = todoJunto.PCA_from_sklearn(A)
+
+    # PCA a partir del método de la potencia
+    pow_eigenvalues, pow_pca_coef, pow_comp_prin, pow_var_exp = todoJunto.PCA_from_potencia(A)
+
+    try:
+        # if len(val_sing) == len(pow_val_sing):
+        var_exp_igual = np.allclose(var_exp,pow_var_exp)
+        err_var_exp = err_relativo(var_exp, pow_var_exp)
+
+        eigen_igual = np.allclose(np.abs(eigenvalues), np.abs(pow_eigenvalues))
+        err_eigen = err_relativo(np.abs(eigenvalues), np.abs(pow_eigenvalues))
+
+        coef_abs_iguales = np.allclose(np.abs(pca_coef),np.abs(pow_pca_coef))
+        err_coef_abs = err_relativo(np.abs(pca_coef),np.abs(pow_pca_coef))
+
+        comp_abs_iguales = np.allclose(np.abs(comp_prin),np.abs(pow_comp_prin))
+        err_comp_abs = err_relativo(np.abs(comp_prin), np.abs(pow_comp_prin))
+
+    except:
+        print('Nota: Los resultados son de distinta longitud y por lo tanto se comparan solo las entradas en común')
+        min_len = min(len(eigenvalues),len(pow_eigenvalues))
+        var_exp_igual = np.allclose(var_exp[:min_len],pow_var_exp[:min_len])
+        err_var_exp = err_relativo(var_exp[:min_len], pow_var_exp[:min_len])
+
+        eigen_igual = np.allclose(np.abs(eigenvalues)[:min_len], np.abs(pow_eigenvalues)[:min_len])
+        err_eigen = err_relativo(np.abs(eigenvalues)[:min_len], np.abs(pow_eigenvalues)[:min_len])
+
+        coef_abs_iguales = np.allclose(np.abs(pca_coef[:min_len]),np.abs(pow_pca_coef[:min_len]))
+        err_coef_abs = err_relativo(np.abs(pca_coef[:min_len]),np.abs(pow_pca_coef[:min_len]))
+
+        comp_abs_iguales = np.allclose(np.abs(comp_prin[:,:min_len]),np.abs(pow_comp_prin[:,:min_len]))
+        err_comp_abs = err_relativo(np.abs(comp_prin[:,:min_len]), np.abs(pow_comp_prin[:,:min_len]))
+        
+             
+    data_a_comparar = {'elemento':['varianza explicada','eigenvalores','coeficientes', 'componentes principales'],
+                     'Igualdad (en valor absoluto)':[var_exp_igual,eigen_igual,coef_abs_iguales, comp_abs_iguales],
+                     'Max error relativo (con valor absoluto)': [np.amax(err_var_exp),np.amax(err_eigen),np.amax(err_coef_abs),np.amax(err_comp_abs)],
+                     'Error relativo (con valor absoluto)':[err_var_exp, err_eigen,err_coef_abs, err_comp_abs]}
+
+    
+    comparativa = pd.DataFrame(data=data_a_comparar)
+    
+    
+    return comparativa
