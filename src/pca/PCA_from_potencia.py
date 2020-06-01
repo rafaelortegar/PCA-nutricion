@@ -27,7 +27,7 @@ def PCA_from_potencia(X):
     cov = np.dot(X.T, X)/X.shape[0]
     
     #Aplicamos el método de la potencia
-    evalues_pow, evectors_pow = power_deflation(cov,50)
+    evalues_pow, evectors_pow = power_deflation(cov,2000)
     
     # La varianza explicada
     varianza_explicada = evalues_pow/np.sum(evalues_pow)
@@ -43,5 +43,4 @@ def PCA_from_potencia(X):
     conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1
     
-    return evalues_pow[:num_componentes], evectors_pow[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes] 
-    
+    return evalues_pow[:num_componentes], evectors_pow.T[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes]  
