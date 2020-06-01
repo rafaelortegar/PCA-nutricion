@@ -1,16 +1,18 @@
 import numpy as np
 import pandas as pd
 
-
+# Función basada en la de Wikipedia- Power Iteration (https://en.wikipedia.org/w/index.php?title=Power_iteration&oldid=957783806)
 def power_iteration(A, num_simulations: int):
     """
+    Función basada en la de Wikipedia- Power Iteration (https://en.wikipedia.org/w/index.php?title=Power_iteration&oldid=957783806)
+    
     Función que implementa el método de la potencia  
     params: A:			matriz (en nuestro caso, la de covarianzas)
             num_simulations:      número de iteraciones a realizar    
     
     
     return:     m_k		Eigenvector dominante
-                b_k		Eigenvector corresondiente
+                b_k		Eigenvector correspondiente
 
     """
     # Ideally choose a random vector
