@@ -39,7 +39,7 @@ con los notebooks de las siguentes secciones:
 [Programación](https://github.com/123972/PCA-nutricion/tree/master/notebooks/Programacion)
   y [Revisión](https://github.com/123972/PCA-nutricion/tree/master/notebooks/Revision).   
 
-- Carpeta [results](https://github.com/123972/PCA-nutricion/tree/master/results):Esta carpeta contiene los resultados obtenidos por el proyecto, así como la presentación y el reporte final.
+- Carpeta [results](https://github.com/123972/PCA-nutricion/tree/master/results):Esta carpeta contiene los resultados obtenidos por el proyecto, así como la [presentación](https://github.com/123972/PCA-nutricion/blob/master/results/PCA_presentacion.pdf) y el [reporte final](https://github.com/123972/PCA-nutricion/blob/master/results/reporte_final.ipynb).
 
 - Carpeta [references](https://github.com/123972/PCA-nutricion/tree/master/references): Incluye todas las referencias consultadas durante el proyecto.
 
