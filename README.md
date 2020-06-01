@@ -48,8 +48,6 @@ con los notebooks y scripts de la sección del
 
 - Carpeta [src](https://github.com/123972/PCA-nutricion/tree/master/src): Incluye todos los scripts separados en dos secciones:[PCA](https://github.com/123972/PCA-nutricion/tree/master/src/pca) y [test algorithms](https://github.com/123972/PCA-nutricion/tree/master/src/test_algorithms) 
 
-- Carpeta [tests](https://github.com/123972/PCA-nutricion/tree/master/tests):[Incluye algunas pruebas y el perfilamiento](https://github.com/123972/PCA-nutricion/blob/master/tests/Perfilamiento_y_Optimizacion.ipynb)
-
 
 
 
