@@ -4,36 +4,57 @@
 
 **Lenguaje a utilizar:** Python
 
+**Importante notarque en este momento existió un cambio radical en el proyecto, debido a que se cambió la base de datos**
+´
 ## Asignación de tareas por persona y por rol  
 
 * Rafael Ortega
-  * Tareas de búsqueda y organización, responsable: Rafael Ortega.
-    Se realizó la búsqueda de posibles bases de datos, así como información correspondiente a los algoritmos de  
-    optimización a ser vistos en clase.
-  * Por otro lado, se organizó una reunión para la asignación de roles y la creación de los milestones y proyectos en github, para la organización del proyecto.
-  * Limpieza, EDA y exploración de los datos
+  * Creación del nuevo repositorio.
+  * Elaboración de gráficas de EDA.
+  * Finalizar configuración de Docker.
+  * Finalizar configuración de AWS.
+  * Inserción en el reporte final de la información correspondiente.
+  * Apoyo en actualización de los README's.
+  * Limpieza de repositorio.
 
 * Karla Alfaro Pizaña:  
-  * Limpieza de la base de datos: Se elaboró el script para la limpieza de la base de datos y la preparación de los mismos para su uso en el desarrollo e implementación de algoritmos de PCA, EDA y Feature Engineering.
-  * Feature engineering, responsable: Karla Alfaro.  
-Se realizó el feature engineering de la base de datos, así como la revisión de los pasos anteriores debido al amplio conocimiento de la misma.  
-  * Feature Selection, responsable: Karla Alfaro. Se hizo un OLS para intentar buscar variables que pudieran ser no significativas en el modelo,
-pues el objetivo está relacionado con la reducción de dimensionalidad. Se obtuvieron los p-values de todas las variables y se encontró que  
-prácticamente la mayoría tienen una significacia alta, por lo que se justifica el uso de PCA para la reducción de dimensionalidad.
+  * Limpieza de la base de datos.
+  * Documentación sobre la base de datos.
+  * Elaboración del reporte final.
+  * EDA y Feature Engineering.
+  * Coordinación del reporte final.
+  * Limpieza de repositorio.
 
 * Mario Rodríguez:
-  * EDA: Se realizó un análisis exploratorio de datos para encontrar y ver de mejor manera posibles relaciones en los datos que puedan ser utilizados para hacer el feature engineering correspondiente.
+  * Apoyo en la elaboración del EDA.
   * Revisión de los algoritmos de limpieza: Se mejoraron algunas funciones para el procesamiento de los datos, corrección de algunos errores.
+  * Perfilamiento del algoritmo.
+  * Inserción en el reporte final de la información correspondiente.
 
 * Elizabeth Viveros:  
-  * Implementación del algoritmo con scikit-learn y con SVD sobre nuestros datos
+  * Obtención de los componentes principales de los datos usando la paquetería de Sklearn (notebook PCA_from_sklearn).
+  * Modelo de árboles de decisión con los 7 componentes y con todas las variables.
+  * Análisis de conglomerados utilizando K-Means .
+  * Cómputo en paralelo usando Dask.
+  * Inserción en el reporte final de la información correspondiente.
+  * Apoyo con actualización de los README's.
+  * Limpieza de repositorio.
+  * Adición de conclusiones finales en reporte final.
 
 * Leonardo Marín:
-  * Primera prueba con jacobi y comparación de resultados contra los obtenidos con scikit-learn y con SVD
+  * Ajuste del método de la potencia.
+  * Adición de deflation.
+  * Integración de funciones igualando outputs.
+  * Inserción en el reporte final de la información correspondiente.
+  
 
 * Elizabeth Rodríguez
-  * Documentación e información del algoritmo: Búsqueda de información sobre PCA para su aplicación en el algoritmo.
-  * Revisión, documentación y apoyo con algoritmos: Revisión del algoritmo de jacobi, SVD y scikit-learn, documentación de los algoritmos y revisión.
+  * Ajuste del método de la potencia.
+  * Adición de deflation.
+  * Integración de funciones igualando outputs.
+  * Inserción en el reporte final de la información correspondiente.
+  * Ajuste del notebook de Revisiones Comparativa PCA.
+
 
 ## Fechas
 
@@ -45,12 +66,9 @@ prácticamente la mayoría tienen una significacia alta, por lo que se justifica
 | 4 | Avance 4: Reporte final                                    | 22/Mayo     | PDF Reporte final & Notebooks       |
 | 5 | Presentación del proyecto                                  | Examen Final| Notebook Reporte Final y explicación|
 
-## Por realizar
-
-* Paralelización del algoritmo.
-* Montarlo en una instancia de Amazon Web Services para intentar paralelizarlo.
-* Subir el documento de docker para su uso en las instancias y por el equipo.
-* Finalizar el reporte final para entregar.
-* Realizar perfilamiento del algoritmo.
-* Revisar y hacer más pruebas a los algoritmos realizados.
-* Mejorar documentación.
+**Como equipo, coincidimos en que:** Este proyecto nos sirvió de gran aprendizaje en temas como 
+* La colaboración en equipos, además del trabajo en equipo a distancia.
+* Creación, implementación y uso de contenedores de Docker.
+* Uso del algoritmo correcto para el problema y datos que se tienen.
+* Uso de AWS.
+* Aprovechamiento de las fortalezas de cada miembro del equipo para la implementación rápida de la solución a un problema.
