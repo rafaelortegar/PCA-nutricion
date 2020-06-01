@@ -72,7 +72,7 @@
 | 4 | Avance 4: Reporte final                                    | 22/Mayo     | PDF Reporte final & Notebooks       |
 | 5 | Presentación del proyecto                                  | Examen Final| Notebook Reporte Final y explicación|
 
-**Como equipo, coincidimos en que:** Este proyecto nos sirvió de gran aprendizaje en temas como: 
+**Como equipo, coincidimos en que** Este proyecto nos sirvió de gran aprendizaje en temas como: 
 * La colaboración en equipos, además del trabajo en equipo a distancia.
 * Creación, implementación y uso de contenedores de Docker.
 * Uso del algoritmo correcto para el problema y datos que se tienen.
