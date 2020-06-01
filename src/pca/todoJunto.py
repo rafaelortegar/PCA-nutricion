@@ -236,4 +236,4 @@ def PCA_from_potencia(X):
     conteo = (varianza_acumulada)  <  0.8
     num_componentes = conteo.sum() + 1
     
-    return evalues_pow[:num_componentes], evectors_pow[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes]
+    return evalues_pow[:num_componentes], evectors_pow.T[:num_componentes], Z[:,:num_componentes], varianza_explicada[:num_componentes]
