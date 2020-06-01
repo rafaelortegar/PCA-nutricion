@@ -21,32 +21,29 @@ La estructura del repositorio está basado en [este](https://drivendata.github.i
 - Carpeta [avances](https://github.com/123972/PCA-nutricion/tree/master/avances): contiene
  los avances de cada una de las etapas del proyecto.
 
-- Carpeta [data](https://github.com/123972/PCA-nutricion/tree/master/data): contiene la base de datos a utilizar,
-así como información sobre el procedimiento de feature engineering a seguir para unir ambas bases de datos y la limpieza
-de las variables.
+- Carpeta [data](https://github.com/123972/PCA-nutricion/tree/master/data): contiene la base de datos a utilizar.
 
 - Carpeta [docker](https://github.com/123972/PCA-nutricion/tree/master/docker): Contiene la información 
 pertienete para poder correr los scripts y notebooks en un contenedor de docker.
 
-- Carpeta [docs](https://github.com/123972/PCA-nutricion/tree/master/docs): Contiene el cuestionario utlilizado
-durante la encuesta en la que se obtuvieron los datos utilizados en este proyecto, así como las 
-[imágenes](https://github.com/123972/PCA-nutricion/tree/master/docs/images) empleadas en el README.md y las 
-[referencias](https://github.com/123972/PCA-nutricion/tree/master/docs/References) utilizadas durante el 
-proyecto.
+- Carpeta [docs](https://github.com/123972/PCA-nutricion/tree/master/docs): Contiene la carpeta 
+[img](https://github.com/123972/PCA-nutricion/tree/master/docs/img) que incluye las imagenes empleadas en el reporte final.
 
 - Carpeta [environment](https://github.com/123972/PCA-nutricion/tree/master/environment): Contiene el 
 ambiente con las instalaciones de python empleadas en este proyecto. Dichas instalaciones también se pueden instalar vía
 el archivo de requirements.txt
 
-- Carpeta [notebooks](https://github.com/123972/PCA-nutricion/tree/master/notebooks): Contiene cinco carpetas 
-con los notebooks y scripts de la sección del 
+- Carpeta [notebooks](https://github.com/123972/PCA-nutricion/tree/master/notebooks): Contiene tres carpetas 
+con los notebooks de las siguentes secciones: 
 [EDA](https://github.com/123972/PCA-nutricion/tree/master/notebooks/EDA), 
 [Programación](https://github.com/123972/PCA-nutricion/tree/master/notebooks/Programacion)
   y [Revisión](https://github.com/123972/PCA-nutricion/tree/master/notebooks/Revision).   
 
 - Carpeta [results](https://github.com/123972/PCA-nutricion/tree/master/results):Esta carpeta contiene los resultados obtenidos por el proyecto, así como la presentación y el reporte final.
 
-- Carpeta [src](https://github.com/123972/PCA-nutricion/tree/master/src): Incluye todos los scripts separados en dos secciones:[PCA](https://github.com/123972/PCA-nutricion/tree/master/src/pca) y [test algorithms](https://github.com/123972/PCA-nutricion/tree/master/src/test_algorithms) 
+- Carpeta [references](https://github.com/123972/PCA-nutricion/tree/master/references): Incluye todas las referencias consultadas durante el proyecto.
+
+- Carpeta [src](https://github.com/123972/PCA-nutricion/tree/master/src): Incluye todos los scripts separados en dos secciones:[pca](https://github.com/123972/PCA-nutricion/tree/master/src/pca) y [test algorithms](https://github.com/123972/PCA-nutricion/tree/master/src/test_algorithms) 
 
 
 
