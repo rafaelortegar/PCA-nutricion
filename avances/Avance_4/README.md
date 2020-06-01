@@ -24,12 +24,15 @@
   * EDA y Feature Engineering.
   * Coordinación del reporte final.
   * Limpieza de repositorio.
+  * Elaboración de la presentación final.
+  * Apoyo en la coordinación del equipo.
 
 * Mario Rodríguez:
   * Apoyo en la elaboración del EDA.
   * Revisión de los algoritmos de limpieza: Se mejoraron algunas funciones para el procesamiento de los datos, corrección de algunos errores.
   * Perfilamiento del algoritmo.
   * Inserción en el reporte final de la información correspondiente.
+  * Elaboración de la presentación final.
 
 * Elizabeth Viveros:  
   * Obtención de los componentes principales de los datos usando la paquetería de Sklearn (notebook PCA_from_sklearn).
@@ -40,12 +43,14 @@
   * Apoyo con actualización de los README's.
   * Limpieza de repositorio.
   * Adición de conclusiones finales en reporte final.
+  * Elaboración de la presentación final.
 
 * Leonardo Marín:
   * Ajuste del método de la potencia.
   * Adición de deflation.
   * Integración de funciones igualando outputs.
   * Inserción en el reporte final de la información correspondiente.
+  * Elaboración de la presentación final.
   
 
 * Elizabeth Rodríguez
@@ -54,6 +59,7 @@
   * Integración de funciones igualando outputs.
   * Inserción en el reporte final de la información correspondiente.
   * Ajuste del notebook de Revisiones Comparativa PCA.
+  * Elaboración de la presentación final.
 
 
 ## Fechas
